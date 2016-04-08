@@ -1,0 +1,23 @@
+{
+  "name": "nikino-popcircles",
+  "homepage": "https://github.com/broAir/nikino-popcircles",
+  "authors": [
+    "broAir <andrey.bobrov.dev@gmail.com>"
+  ],
+  "description": "popcircles-like navigation for nikino app",
+  "main": "",
+  "keywords": [
+    "popcircles",
+    "jquery",
+    "nikino",
+    "navigation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
