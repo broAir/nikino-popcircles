@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        nikinoPopcircles
+    </title>
+    <link rel="stylesheet" href="../src/nikinoPopcircles.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<div id="test-el">
+    <div class="popcircle-container">
+        <div class="circle-base popcircle">
+        </div>
+        <div class="popcircle-children">
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+            <div class="circle-base popcircle-child popcircle-child-free"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/widget -->
+<script src="../src/nikinoPopcircles.js"></script>
+<!-- endbuild -->
+</body>
+<script>
+    $(document).ready(function(){
+        $("#test-el").nikinoPopcircle();
+    });
+</script>
+</html>

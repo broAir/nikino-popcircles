@@ -1,0 +1,35 @@
+.popcircle-container{
+    position: relative;
+    text-align: center;
+    display: table;
+    width: 200px;
+    height: 200px;
+}
+
+.circle-base {
+    border-radius: 50%;
+}
+
+.popcircle {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+}
+
+.popcircle-child{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.popcircle-child-free {
+    background: rgba(155, 155, 155, 0.0);
+}
+
+.popcircle-child-active {
+     background: rgba(255, 100, 245, 0.4);
+
+ }
