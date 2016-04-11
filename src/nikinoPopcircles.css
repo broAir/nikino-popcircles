@@ -11,22 +11,35 @@
 }
 
 .popcircle {
+    border: none;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     width: 100px;
     height: 100px;
-    background: blueviolet;
+
+    background: #6bc6ff; /* Old browsers */
+    }
+
+.popcircle:hover {
+    border-color: #c6e8ff;
+    border-width: 5px;
+    border-style: solid;
 }
 
+.popcircle:active {
+    border-color: #c6e8ff;
+    border-style: solid;
+    border-width: 8px;
+}
 .popcircle-child{
     position: absolute;
     width: 50px;
     height: 50px;
     opacity: 0;
-    background-color: chartreuse;
+    background-color: burlywood;
 }
 
-.popcircle-child:hover{
+.popcircle-child-visible:hover{
     opacity: 1!important;
 }

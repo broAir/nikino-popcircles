@@ -40,7 +40,9 @@
                 var newTop = $el.position().top+ +$el.attr("data-y-rad-increment");
                 var newLeft = $el.position().left+ +$el.attr("data-x-rad-increment");
                 
-                $el.animate({top: newTop, left: newLeft, opacity:0.5}, "fast");
+                $el.animate({top: newTop, left: newLeft, opacity:0.5}, "fast", function(){
+                    $el.addClass("popcircle-child-visible");
+                });
              });
         },
         
@@ -54,6 +56,7 @@
                 var newLeft = $el.position().left- +$el.attr("data-x-rad-increment");
                 
                 $el.animate({top: newTop, left: newLeft, opacity:0.0}, "fast");
+                $el.removeClass("popcircle-child-visible");
              });
         },
         
