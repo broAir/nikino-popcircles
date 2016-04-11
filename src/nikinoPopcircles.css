@@ -8,17 +8,22 @@
 
 .circle-base {
     border-radius: 50%;
+    text-align: center;
 }
 
 .popcircle {
     border: none;
+    
     margin: auto;
     position: absolute;
+    
     top: 0; left: 0; bottom: 0; right: 0;
     width: 100px;
     height: 100px;
 
-    background: #6bc6ff; /* Old browsers */
+    background: #6bc6ff;
+    
+    z-index: 10;
     }
 
 .popcircle:hover {
@@ -42,4 +47,10 @@
 
 .popcircle-child-visible:hover{
     opacity: 1!important;
+}
+
+.popcircle-child-glyph {
+    top:30%;
+    line-height: 1;
+    font-size: 20px;
 }
