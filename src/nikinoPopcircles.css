@@ -2,8 +2,8 @@
     position: relative;
     text-align: center;
     display: table;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
 }
 
 .circle-base {
@@ -23,13 +23,10 @@
     position: absolute;
     width: 50px;
     height: 50px;
+    opacity: 0;
+    background-color: chartreuse;
 }
 
-.popcircle-child-free {
-    background: rgba(155, 155, 155, 0.0);
+.popcircle-child:hover{
+    opacity: 1!important;
 }
-
-.popcircle-child-active {
-     background: rgba(255, 100, 245, 0.4);
-
- }
