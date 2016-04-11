@@ -20,9 +20,15 @@
     "test",
     "tests"
   ],
+<<<<<<< 78b8930c227a128b7ff21fb3a3711c88e5a34b49
     "dependencies": {
         "jquery": "~2.1.0",
         "jquery-ui": "latest"
     },
     "devDependencies": {}
+=======
+  "dependencies": {
+    "jquery-ui": "^1.11.4"
+  }
+>>>>>>> added jqueryui
 }
