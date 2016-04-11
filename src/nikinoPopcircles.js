@@ -7,7 +7,8 @@
 
         _positionChildren:function() {
             var children = $(".popcircle-container").find(".popcircle-children").children();
-            var angle = Math.PI * 2 / children.length;
+            // 2Pi/10 -> only ten placeholders
+            var angle = Math.PI * 2 / 10
 
             var $parent = $(".popcircle-container").find(".popcircle");
             var parentRadius = $parent.outerWidth(true) / 2;
@@ -18,7 +19,8 @@
                 var $el = $(el);
                 
                 var thisRad = $el.width() / 2;
-                var num = index * angle;
+                // to make sure that we start from the 3rd quarter
+                var num = index * angle + Math.PI +Math.PI/4;
                 
                 var posX = parentRadius + (Math.cos(num)) * (parentRadius/2) - thisRad;
                 var posY = parentRadius + (-Math.sin(num)) * (parentRadius/2) - thisRad;
